@@ -1,4 +1,4 @@
-package com.example.bp_fall_2021_quizapp;
+package com.example.quiz_app;
 
 import android.content.Intent;
 import android.view.View;
@@ -41,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, QuizQuestionActivity.class);
         startActivity(intent);
         finish(); // close current activity
-        }
-
     }
+
+}

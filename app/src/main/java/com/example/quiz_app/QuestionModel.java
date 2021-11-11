@@ -1,4 +1,4 @@
-package com.example.bp_fall_2021_quizapp;
+package com.example.quiz_app;
 
 public class QuestionModel {
 
@@ -52,5 +52,3 @@ public class QuestionModel {
         return correctAnsNum - 1;
     }
 }
-
-

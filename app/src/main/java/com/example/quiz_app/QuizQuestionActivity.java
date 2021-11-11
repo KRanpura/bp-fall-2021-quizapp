@@ -1,4 +1,4 @@
-package com.example.bp_fall_2021_quizapp;
+package com.example.quiz_app;
 
 import android.content.Intent;
 import android.view.View;
@@ -18,9 +18,16 @@ public class QuizQuestionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quiz_question);
+        setContentView(R.layout.activity_quiz_questions);
 
         // create arraylist of questions
+       ArrayList<String> questions = new ArrayList<String>(5);
+       questions.add("When was Rutgers founded?");
+       questions.add("When did Rutgers admit its first full class of women students?");
+       questions.add("Which one of the following is not a Rutgers building?");
+       questions.add("What was Rutgers University’s original name?");
+       questions.add("How many campuses make up Rutgers university?");
+
 
         // get username intent from main activity screen
 
@@ -69,9 +76,9 @@ public class QuizQuestionActivity extends AppCompatActivity {
         // clear previous button selections
 
         // if you haven't gone through all the questions yet
-            // set the question & text to the next question
-            // increase question number
-            // set progress bar
+        // set the question & text to the next question
+        // increase question number
+        // set progress bar
 
         // if finished with quiz, start Results activity
 
